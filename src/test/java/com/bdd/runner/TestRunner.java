@@ -18,7 +18,7 @@ import static com.bdd.variables.GlobalVariables.*;
 import static com.bdd.utils.WebDriverUtils.*;
 
 @CucumberOptions(features = "src/test/resources/featurefiles", glue = { "com.bdd.steps",
-		"com.bdd.hooks" }, tags = "@getEmployeeID", plugin = { "pretty", "html:target/cucumber-report.html",
+		"com.bdd.hooks" }, tags = "@demoAPItest", plugin = { "pretty", "html:target/cucumber-report.html",
 				"json:target/cucumber.json" }, monochrome = true)
 
 public class TestRunner extends AbstractTestNGCucumberTests {

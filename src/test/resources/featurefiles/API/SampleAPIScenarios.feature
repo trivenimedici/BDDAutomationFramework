@@ -1,22 +1,22 @@
 #apidemo automation feature/scenarios
 
 
-@demoAPItest
+
 Feature: Demo for  api automation
 
-
+@demoAPItest
 #Author:Triveni                Date:16/05/2021
 Scenario Outline: Validation of get request with rest assured
 Given User perform GET operation for "<endpoint>" with "app_uri"
 Then The response code for the request should be "<responsecode>"
-And The response header should have "<responseheadervalue>" for "<responseheaderfield>"
-Then Get the response header value
+#And The response header should have "<responseheadervalue>" for "<responseheaderfield>"
+#Then Get the response header value
 And User closes the connection
 
 
 Examples:
 |responsecode|endpoint|responseheadervalue|responseheaderfield|
-|200|test|test|test|
+|403|test|test|test|
 
 #Author:Triveni                Date:16/05/2021
 Scenario Outline: Validation of post request with rest assured
