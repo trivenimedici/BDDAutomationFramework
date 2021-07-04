@@ -56,7 +56,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		quitDriver();
 		Log.info("End of execution for scenario: " + ScenarioName);
 		Log.info("Driver is closed");
-		logFileName = Log.setLogfile(ScenarioName);
+		//logFileName = Log.setLogfile(ScenarioName);
 	//	Log.copyFile(logFileName);
 		testRunner.finish();
 	}
