@@ -1,0 +1,126 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 436151300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Established Connection to Database",
+            "match": {
+              "location": "com.bdd.steps.DBCommonSteps.user_connects_to_db()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-24T06:34:02.833Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6996500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bdd.hooks.GlobalHooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validation to get the employee id for the given employee",
+        "description": "",
+        "id": "demo-for-db-automation-testing;validation-to-get-the-employee-id-for-the-given-employee;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 36978300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bdd.hooks.GlobalHooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 60942300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User execute the query for given employee name \"testuser1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1",
+                  "offset": 48
+                }
+              ],
+              "location": "com.bdd.steps.EmployeeValidations.user_execute_query_for_employee(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5996100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The DB should fetch the id of the employee",
+            "match": {
+              "location": "com.bdd.steps.EmployeeValidations.the_db_should_fetch_the_id_of_the_employee()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17987300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Close the database connection",
+            "match": {
+              "location": "com.bdd.steps.DBCommonSteps.close_db_connection()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demotest"
+          },
+          {
+            "name": "@getEmployeeID"
+          }
+        ]
+      }
+    ],
+    "name": "Demo for DB automation testing",
+    "description": "",
+    "id": "demo-for-db-automation-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/DB/DBTests.feature",
+    "tags": [
+      {
+        "name": "@demotest",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
